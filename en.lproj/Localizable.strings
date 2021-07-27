@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  ENumbers
+
+  Created by Melih Çalışkan on 27.07.2021.
+  
+*/
+
+"e_numbers" = "E Numbers";
+"language" = "Language";
+"select_language" = "Select a language";
