@@ -15,6 +15,7 @@
 		D48B111726B07F91002A4F95 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B111626B07F91002A4F95 /* Onboarding.swift */; };
 		D48B111926B08D22002A4F95 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B111826B08D22002A4F95 /* Settings.swift */; };
 		D48B111B26B08E77002A4F95 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B111A26B08E77002A4F95 /* CardView.swift */; };
+		D48B111F26B09384002A4F95 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B111E26B09384002A4F95 /* SearchBar.swift */; };
 		D4DF8A3E26B0465D003808D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4DF8A4026B0465D003808D9 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		D48B111626B07F91002A4F95 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		D48B111826B08D22002A4F95 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		D48B111A26B08E77002A4F95 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D48B111E26B09384002A4F95 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		D4DF8A3F26B0465D003808D9 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D4DF8A4726B046A8003808D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 			children = (
 				D483755726AEF7A900E21AE3 /* ENumbersApp.swift */,
 				D483755926AEF7A900E21AE3 /* ContentView.swift */,
+				D48B111E26B09384002A4F95 /* SearchBar.swift */,
 				D48B111A26B08E77002A4F95 /* CardView.swift */,
 				D48B111826B08D22002A4F95 /* Settings.swift */,
 				D483755B26AEF7AA00E21AE3 /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48B111F26B09384002A4F95 /* SearchBar.swift in Sources */,
 				D483755A26AEF7A900E21AE3 /* ContentView.swift in Sources */,
 				D483755826AEF7A900E21AE3 /* ENumbersApp.swift in Sources */,
 				D48B111726B07F91002A4F95 /* Onboarding.swift in Sources */,

@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var rememberMe = false
-    
+    @State private var searchText = ""
+
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack(spacing:20) {
+                    
+                    SearchBar(text: $searchText).padding()
                     
                     CardView(category: "E632", title:"Dipotassium inosinate")
                     CardView(category: "E633", title: "Calcium inosinate")
