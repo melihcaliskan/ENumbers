@@ -7,30 +7,42 @@
 
 import SwiftUI
 
+struct CardData: Identifiable {
+    let id = UUID()
+    let title: String
+    let category: String
+}
+
 struct ContentView: View {
     @State private var searchText = ""
-
+    
+    let list = [
+        CardData(title: "Dipotassium inosinate", category: "E632"),
+        CardData(title: "Calcium inosinate", category: "E633")
+    ]
+    
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(spacing:20) {
-                    
+            VStack() {
+                ScrollView() {
                     SearchBar(text: $searchText).padding()
                     
-                    CardView(category: "E632", title:"Dipotassium inosinate")
-                    CardView(category: "E633", title: "Calcium inosinate")
+                    ForEach(list, id: \.id) { e in
+                        ZStack {
+                            CardView(title: e.title, category: e.category)
+                            NavigationLink(
+                                destination: DetailView()) {
+                                EmptyView()
+                            }
+                        }
+                    }.listRowInsets(EdgeInsets())
                     
-                    NavigationLink(
-                        destination: Settings()) {
-                        Text("Go to settings")
-                    }
                 }
-                .navigationBarTitle("e_numbers")
+                .navigationBarHidden(true)
             }
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
